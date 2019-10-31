@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Creado por Kelvin Jimenez
+-->
+<html>
+	<head>
+		<title>OVI Programación WEB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+			<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">INICIO</a></h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="#">Lecturas</a>
+										<ul>
+											<li><a href="php.html">¿Que es PHP?</a></li>
+											<li><a href="mysql.html">¿Que es MySQL?</a></li>											
+											<li><a href="html5.html">¿Que es HTML5?</a></li>
+											<li><a href="xampp.html">¿Que es XAMPP?</a></li>											
+											<li><a href="apache.html">¿Que es APACHE?</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Actividades</a>
+										<ul>
+											<li><a href="actividad1.html">Instalación y prueba de XAMPP</a></li>
+											<li><a href="actividad2.html">Crear una base de datos</a></li>
+											<li><a href="actividad3.html">Formulario HTML y CRUD</a></li>
+										</ul>
+									</li>									
+									<li class="break">
+										<a href="#">Multimedia</a>
+										<ul>
+											<li><a href="multimedia1.html">Multimedia 1</a></li>
+											<li><a href="multimedia2.html">Multimedia 2</a></li>											
+										</ul>
+									</li>							
+									<li><a href="autores.html">Autor</a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Crear una Base de datos</h2>
+									<p>Hay muchas formas de crear una BD, haciendolo manualmente, usando un script, clonando una base de datos desde un repositorio,
+									etcétera, de momento la crearemos manualmente o ejecutaremos el script. puedes bajar uno de ejemplo de esta base de datos creada haciendo clic 
+									<a download target='_blank' href="recursos/Script.zip">AQUI</a>
+									</p>
+								</header>
+								<a class="image featured"><img src="images/BD1.PNG" alt="" /></a>
+								<p>Creación manual de tablas</p>
+								<p>Paso 1. Con nuestro servicios de APACHE y MySQL iniciados ingresamos a <a target='_blank' href="http://localhost/phpmyadmin/">phpMyAdmin</a> y hacemos clic en New del panel de operaciones a la izquierda
+								</p>
+								<img style="display:block; margin:auto" src="images/BD2.PNG" alt="" /><br>
+								<p>Paso 2. Ingresamos el nombre de nuestra BD, el cual será crud_php y hacemos clic en create</p>
+								<img style="display:block; margin:auto" src="images/BD3.PNG" alt="" /><br>
+								<p>Paso 3. Al crear correctamente nuestra BD, creamos una tabla llamada usuarios y agregamos los siguientes campos con sus respectivos tipos y tamaños:
+								id tipo INT, nombre, apellido e email de tipo VARCHAR (50)
+								</p>
+								<img style="display:block; margin:auto" src="images/BD4.PNG" alt="" /><br>
+								<p>Adicional a esto para la columna id marcamos la opción para que no permita valores nulos y sea autoincrementable</p>
+								<img style="display:block; margin:auto" src="images/BD5.PNG" alt="" /><br>
+								<p>Paso 4. Hacemos clic en save para guardar la tabla</p>
+								<img style="display:block; margin:auto" src="images/BD6.PNG" alt="" /><br>
+								<p>ESO ES TODO!!! has creado una base de datos con una tabla.</p>
+								<img style="display:block; margin:auto; width:80%" src="images/BD7.PNG" alt="" /><br>
+								<p>Ejecutar el script</p>
+								<p>Al tener un script todo es mucho mas sencillo, para crear la base de datos solo debes ejecutar el script que descargaste 
+								de la siguiente manera.
+								</p>
+								<p>Paso 1. Con nuestro servicios de APACHE y MySQL iniciados ingresamos a <a target='_blank' href="http://localhost/phpmyadmin/">phpMyAdmin</a> y hacemos clic en la pestaña de SQL
+								</p>
+								<img style="display:block; margin:auto" src="images/BD8.PNG" alt="" /><br>
+								<p>Paso 2. En el cuadro de texto pegamos el contenido de nuestro script</p>
+								<img style="display:block; margin:auto" src="images/BD9.PNG" alt="" /><br>
+								<p>Paso 3. Hacemos clic en GO para ejecutar el script
+								</p>
+								<img style="display:block; margin:auto" src="images/BD10.PNG" alt="" /><br>
+								<p>El script generara la base de datos con la estructura correcta para realizar nuestro CRUD.</p>								
+								<h2>Continuemos en la <a href="actividad3.html">Actividad 3</a></h2>
+							</article>					
+					</div>
+				</div>
+
+			<!-- Footer -->
+					<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Fase 3</h2>
+							<p>Crear un OVI en formato WEB con HTML5 y CSS3</p>
+						</header>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<form method="post" action="#">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobile">
+											<input name="name" placeholder="Nombre" type="text" />
+										</div>
+										<div class="col-6 col-12-mobile">
+											<input name="email" placeholder="Correo" type="text" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Mensaje"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Enviar mensaje" /></li>
+												<li><input type="reset" value="Limpiar formulario" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="row gtr-0">
+									<ul class="divided icons col-6 col-12-mobile">
+										<li class="icon fa-twitter"><a target='_blank' href="https://twitter.com/UniversidadUNAD"><span class="extra">twitter.com/</span>UNAD</a></li>										
+									</ul>
+								<a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" height="300px">Tweets by UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 										
+								</div>
+							</section>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li>Kelvin &copy; 2019 All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
